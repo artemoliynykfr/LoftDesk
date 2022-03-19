@@ -133,6 +133,10 @@ header .menu__item {
   transition: all 0.3s ease;
 }
 
+header .menu__item a {
+  color: #000;
+}
+
 header .menu__item:hover,
 header .menu__item:active,
 header .menu__item:visited,
