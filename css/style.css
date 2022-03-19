@@ -148,6 +148,14 @@ header .menu__item:focus {
   transition: all 0.3s ease;
 }
 
+header .menu__item:hover a,
+header .menu__item:active a,
+header .menu__item:visited a,
+header .menu__item:focus-visible a,
+header .menu__item:focus a {
+  color: #000;
+}
+
 header .burger {
   display: none;
   cursor: pointer;
