@@ -72,7 +72,6 @@ header::after {
 }
 
 header nav {
-  overflow: hidden;
   position: relative;
   z-index: 2;
 }
@@ -279,7 +278,7 @@ header .start__item .start__img {
           transform: translate(50%, -50%);
   width: 1079.73px;
   height: auto;
-  z-index: 0;
+  z-index: -1;
 }
 
 .section__about .decor {
@@ -331,11 +330,7 @@ header .start__item .start__img {
   z-index: 99;
 }
 
-.about__btn:hover,
-.about__btn:active,
-.about__btn:visited,
-.about__btn:focus-visible,
-.about__btn:focus {
+.about__btn:hover {
   background-color: #464E2E;
   color: #fff;
 }
@@ -414,22 +409,14 @@ header .start__item .start__img {
   background-size: cover;
 }
 
-.gallery__item:hover::after,
-.gallery__item:active::after,
-.gallery__item:visited::after,
-.gallery__item:focus-visible::after,
-.gallery__item:focus::after {
+.gallery__item:hover::after {
   -webkit-transition: all 0.3s ease;
   -o-transition: all 0.3s ease;
   transition: all 0.3s ease;
-  opacity: 1;
+  opacity: 1 !important;
 }
 
-.gallery__item:hover .gallery__item-btn,
-.gallery__item:active .gallery__item-btn,
-.gallery__item:visited .gallery__item-btn,
-.gallery__item:focus-visible .gallery__item-btn,
-.gallery__item:focus .gallery__item-btn {
+.gallery__item:hover .gallery__item-btn {
   z-index: 1;
   opacity: 1;
   visibility: visible;
@@ -439,15 +426,11 @@ header .start__item .start__img {
   opacity: 0;
   visibility: hidden;
   padding: 12px 54px;
-  color: #fff;
+  color: #ffffff;
   border: 1px solid #fff;
 }
 
-.gallery__item-btn:hover,
-.gallery__item-btn:active,
-.gallery__item-btn:visited,
-.gallery__item-btn:focus-visible,
-.gallery__item-btn:focus {
+.gallery__item-btn:hover {
   background-color: #fff;
   color: #464E2E;
 }
@@ -588,6 +571,7 @@ header .start__item .start__img {
 .footer__text span {
   font-style: normal;
   font-weight: 400;
+  color: #000000;
 }
 
 .footer__copyright {
