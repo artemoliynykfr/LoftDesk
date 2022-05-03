@@ -447,7 +447,7 @@ header .start__item .start__img {
   left: 0;
   width: 729.73px;
   height: auto;
-  z-index: 0;
+  z-index: -1 !important;
 }
 
 .section__question::before {
@@ -457,7 +457,7 @@ header .start__item .start__img {
   right: -653px;
   width: 1079.73px;
   height: auto;
-  z-index: 0;
+  z-index: -1 !important;
 }
 
 .question__form {
@@ -473,6 +473,7 @@ header .start__item .start__img {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   gap: 51px;
+  z-index: 99;
 }
 
 .question__form-input {
@@ -490,6 +491,7 @@ header .start__item .start__img {
   line-height: 19px;
   letter-spacing: 0.1em;
   color: #FFFFFF;
+  z-index: 99;
 }
 
 .question__form-input::-webkit-input-placeholder {
